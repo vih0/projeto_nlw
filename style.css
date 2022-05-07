@@ -21,7 +21,7 @@ body{
     
 }
 
-header::before{
+section::before{
     content: "";
     width:100vw;
     height:calc(115rem + var(--nav-height));
@@ -37,8 +37,11 @@ header::before{
 nav{
     display:flex;
     align-items:center;
+    justify-content: center;
+    padding:2rem 0 ; 
+    width: 100%;
     position:fixed;
-    padding:2rem 0 ;
+    
     top:0;
     left:50%;
     transform:translateX(-50%);
@@ -47,42 +50,59 @@ nav{
   
 }
 
-nav img{
+nav svg{
+    
     width:10rem;
+    height:15rem;
+     
+    
 }
 
-nav.scroll{
-    background-color:var(--primary-color);
-    width:100vw;
-   
-   
+nav{
+    
+    width:100vw; 
 }
-header{
+nav.scroll{
+    width:100vw;
+    background-color:var(--primary-color);
+    
+
+}
+nav.scroll path{
+    fill:white;
+    stroke:white;
+}
+nav.redesSociais path{
+    fill:white;
+    stroke:white;
+}
+
+section{
     width:37.5rem;
     margin-inline: auto;
     margin-top:calc(5.1rem + var(--nav-height)) ;
 }
 
-header h3{
+section h3{
     font-size:1.5rem;
     color:var(--primary-color);
     margin-bottom: 1.6rem;
     
 }
-header h1{
+section h1{
     font-size:3.4rem;
     color:var(--headline);
     line-height: 130%;
     margin-bottom: 2.4rem;
 }
-header p{
+section p{
     font-size:1.8rem;
     line-height:150%;
     color:var(--paragraph);
     margin-bottom :3.2rem;
 
 }
-header button{
+section button{
     background-color:var(--primary-color);
     border:none;
     border-radius:4rem;
@@ -114,6 +134,7 @@ header button{
     align-items: center;
     object-position: 0 2rem;
     
+    
 }
 .Informacoes{
     width:32.7rem;
@@ -144,4 +165,13 @@ header button{
 .dados .titulo  {
      margin-top:1rem;
      font-size:3rem;
+}
+.menu{
+    /* display:none; */
+    background-color:var(--primary-color);
+    width:100vw;
+    height:100vh;
+    font-family: 'Nunito Sans';
+    color:white;
+
 }
