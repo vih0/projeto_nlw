@@ -10,7 +10,7 @@
      --paragraph: hsla(204, 16%, 24% );
      --brand-beige:hsla(204, 100%, 97%);
      --brand-light: hsla(206, 100%, 91%);
-     --nav-height:7.2rem;
+     --nav-height:11rem;
  }
 
 body{
@@ -38,6 +38,7 @@ nav{
     display:flex;
     align-items:center;
     position:fixed;
+    padding:2rem 0 ;
     top:0;
     left:50%;
     transform:translateX(-50%);
@@ -48,39 +49,40 @@ nav{
 
 nav img{
     width:10rem;
-
 }
-nav .logo{
-    margin-top:1.4rem;
-   
 
+nav.scroll{
+    background-color:var(--primary-color);
+    width:100vw;
+   
+   
 }
 header{
     width:37.5rem;
     margin-inline: auto;
-    margin-top:calc(4.1rem + var(--nav-height)) ;
+    margin-top:calc(5.1rem + var(--nav-height)) ;
 }
 
-h3{
+header h3{
     font-size:1.5rem;
     color:var(--primary-color);
     margin-bottom: 1.6rem;
     
 }
-h1{
+header h1{
     font-size:3.4rem;
     color:var(--headline);
     line-height: 130%;
     margin-bottom: 2.4rem;
 }
-p{
+header p{
     font-size:1.8rem;
     line-height:150%;
     color:var(--paragraph);
     margin-bottom :3.2rem;
 
 }
-button{
+header button{
     background-color:var(--primary-color);
     border:none;
     border-radius:4rem;
@@ -112,10 +114,7 @@ button{
     align-items: center;
     object-position: 0 2rem;
     
-
 }
-
-
 .Informacoes{
     width:32.7rem;
     height:70rem;
