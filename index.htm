@@ -65,30 +65,34 @@
             </p>
     </div>
         <button>Faça sua Matricula</button>
-        <img  class = "imagemPrincipal" src ="https://2zo2u23wxb8t2ohqvr3vrq5k-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/Easy-yoga-pose.png" alt="Figura de pessoa em posição lotus">
-    
-    
-    
-        <div class = "Informacoes">
-             <div class ="dados">
-                 <p class = "titulo">Beneficios de Praticar YOGA</p>
-             </div>
-            
-            <div class = "dados">
-                <img src ="https://namu.com.br/wp-content/themes/namu-cursos/dist/images/ico-008.svg" alt="Icone referente a coração">
+
+    </div>
+    <div class="banner">
+        <img class="imagemPrincipal" src="https://2zo2u23wxb8t2ohqvr3vrq5k-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/Easy-yoga-pose.png" alt="Figura de pessoa em posição lotus">
+    </div>
+</section>
+    <div class="informacoes">
+
+       <p class="titulo">Beneficios de Praticar YOGA</p>
+
+        <div class="boxes">
+            <div class="dados">
+                <img src="https://namu.com.br/wp-content/themes/namu-cursos/dist/images/ico-008.svg"
+                     alt="Icone referente a coração">
                 <p>Pode melhorar a saúde do coração</p>
             </div>
-            
-            <div class = "dados">
-                <img src = "https://namu.com.br/wp-content/themes/namu-cursos/dist/images/ico-009.svg" alt="Icone referente a musculação">
+
+            <div class="dados">
+                <img src="https://namu.com.br/wp-content/themes/namu-cursos/dist/images/ico-009.svg"
+                     alt="Icone referente a musculação">
                 <p>Tonifique sua muscultura</p>
             </div>
-           
-            <div class = "dados">
-                <img src = "https://namu.com.br/wp-content/themes/namu-cursos/dist/images/ico-011.svg" alt="Icone referente a depressão">
-                <p>Pode combater a depressão</p>        
+
+            <div class="dados">
+                <img src="https://namu.com.br/wp-content/themes/namu-cursos/dist/images/ico-011.svg"
+                     alt="Icone referente a depressão">
+                <p>Pode combater a depressão</p>
             </div>
-    
         </div>
         
              
@@ -97,4 +101,23 @@
 
    
 </body>
+
+<script>
+    function showMenu(){
+        let btnMenu = document.querySelector("#menu")
+        if(btnMenu.classList.contains('menu-mobile-hide')){
+            btnMenu.classList.remove('menu-mobile-hide')
+            btnMenu.classList.add('menu-mobile-show')
+        }else{
+            btnMenu.classList.remove('menu-mobile-show')
+            btnMenu.classList.add('menu-mobile-hide')
+        }
+    }
+
+    function closeMenu(){
+        let btnMenu = document.querySelector("#menu")
+            btnMenu.classList.remove('menu-mobile-show')
+            btnMenu.classList.add('menu-mobile-hide')
+    }
+</script>
 </html>
