@@ -1,6 +1,7 @@
  *{
      margin: 0;
      box-sizing: border-box;
+     width:100%;
  }
  :root{
      font-size: 62.5%; /* 1rem = 10px */
@@ -8,8 +9,10 @@
      --headline: hsla(205, 100%, 5% );
      --paragraph: hsla(204, 16%, 24% );
      --brand-beige:hsla(204, 100%, 97%);
+    --brand-light: hsla(206, 100%, 91%);
 
  }
+
 body{
     font-family: 'Nunito Sans', sans-serif;
     align-items: center;
@@ -22,6 +25,7 @@ header{
     margin-inline: auto;
     margin-top:4.1rem;
 }
+
 h3{
     font-size:1.5rem;
     color:var(--primary-color);
@@ -65,28 +69,60 @@ button{
 
 
 }
+
 .imagemPrincipal{
     width:40rem;
     height:40rem;
     display: flex;
     align-items: center;
+    object-position: 0 2rem;
     
 
 }
+header::before{
+    content: "";
+    width:100vw;
+    height:108rem;
+    background-color:var(--brand-light);
+    ;
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
 
+
+}
 
 .Informacoes{
     width:32.7rem;
-    height:58rem;
+    height:70rem;
     margin-left:auto;
     margin-right: auto;
     background-color: var(--brand-beige);
     display:flex;
     flex-direction: column;
-    
-    
+    justify-content: center;
+   
 }
 .dados img {
-   width:16rem; 
+   width:10rem;
+   margin-left:auto;
+   margin-right: auto;
    
+   padding-top:1rem;
+   
+
+   
+}
+.dados p{
+    margin-bottom:2rem;
+    padding-top:1rem;
+}
+.dados .titulo  {
+     margin-top:1rem;
+     font-size:3rem;
+}
+.logo{
+    background-color: var(--brand-light);
 }
