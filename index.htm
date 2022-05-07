@@ -12,52 +12,77 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Nunito+Sans:wght@800&family=PT+Sans&family=Roboto:wght@900&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class = "scroll">
+    <nav class="scroll">
         <a href="#" class ="logo"> <img src="https://cdn.discordapp.com/attachments/753423475720454297/972486891763007538/1.png" alt ="Logo da Namaste Yoga"/>
         </a>
-        <a href="#" class ="botaoMenu" ><img src ="https://cdn.discordapp.com/attachments/753423475720454297/972486892018880572/3.png" alt ="botao menu"/></a>
+        <a href="#" class ="botaoMenu" id="menu-open" onclick="showMenu()"><img src ="https://cdn.discordapp.com/attachments/753423475720454297/972486892018880572/3.png" alt ="botao menu"/></a>
+        <div class="menu-mobile menu-mobile-hide" id="menu">
+            <div class="menu-content">
+                <p onclick="closeMenu()">Contatos</p>
+                <p onclick="closeMenu()">Sobre</p>
+                <p onclick="closeMenu()"> Beneficios</p>
+            </div>
+        </div>
     </nav>
 
-<header >
-    
-    
-    <div class = "conteudo">
-            <h3>Bem-Vindo a Namaste Yoga! </h3>
-            <h1>Escola de Yoga mais completa do Mercado </h1>
-            <p>Além dos benefícios ao corpo e a mente, os praticantes de yoga também se beneficiam com a diminuição do estresse e ansiedade. Com o uso de diversas técnicas de relaxamento e meditação, a yoga traz equilíbrio para o corpo e a mente. 
-            </p>
-    </div>
+<section class="main">
+    <div class="conteudo">
+        <h3>Bem-Vindo a Namaste Yoga! </h3>
+        <h1>Escola de Yoga mais completa do Mercado </h1>
+        <p>Além dos benefícios ao corpo e a mente, os praticantes de yoga também se beneficiam com a diminuição do estresse
+            e ansiedade. Com o uso de diversas técnicas de relaxamento e meditação, a yoga traz equilíbrio para o corpo e a
+            mente.
+        </p>
         <button>Faça sua Matricula</button>
-        <img  class = "imagemPrincipal" src ="https://2zo2u23wxb8t2ohqvr3vrq5k-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/Easy-yoga-pose.png" alt="Figura de pessoa em posição lotus">
-    
-    
-    
-        <div class = "Informacoes">
-             <div class ="dados">
-                 <p class = "titulo">Beneficios de Praticar YOGA</p>
-             </div>
-            
-            <div class = "dados">
-                <img src ="https://namu.com.br/wp-content/themes/namu-cursos/dist/images/ico-008.svg" alt="Icone referente a coração">
+
+    </div>
+    <div class="banner">
+        <img class="imagemPrincipal" src="https://2zo2u23wxb8t2ohqvr3vrq5k-wpengine.netdna-ssl.com/wp-content/uploads/2017/03/Easy-yoga-pose.png" alt="Figura de pessoa em posição lotus">
+    </div>
+</section>
+    <div class="informacoes">
+
+       <p class="titulo">Beneficios de Praticar YOGA</p>
+
+        <div class="boxes">
+            <div class="dados">
+                <img src="https://namu.com.br/wp-content/themes/namu-cursos/dist/images/ico-008.svg"
+                     alt="Icone referente a coração">
                 <p>Pode melhorar a saúde do coração</p>
             </div>
-            
-            <div class = "dados">
-                <img src = "https://namu.com.br/wp-content/themes/namu-cursos/dist/images/ico-009.svg" alt="Icone referente a musculação">
+
+            <div class="dados">
+                <img src="https://namu.com.br/wp-content/themes/namu-cursos/dist/images/ico-009.svg"
+                     alt="Icone referente a musculação">
                 <p>Tonifique sua muscultura</p>
             </div>
-           
-            <div class = "dados">
-                <img src = "https://namu.com.br/wp-content/themes/namu-cursos/dist/images/ico-011.svg" alt="Icone referente a depressão">
-                <p>Pode combater a depressão</p>        
+
+            <div class="dados">
+                <img src="https://namu.com.br/wp-content/themes/namu-cursos/dist/images/ico-011.svg"
+                     alt="Icone referente a depressão">
+                <p>Pode combater a depressão</p>
             </div>
-    
         </div>
-        
-             
-</header>
+    </div>
 
-
-   
 </body>
+
+<script>
+    function showMenu(){
+        let btnMenu = document.querySelector("#menu")
+        if(btnMenu.classList.contains('menu-mobile-hide')){
+            btnMenu.classList.remove('menu-mobile-hide')
+            btnMenu.classList.add('menu-mobile-show')
+        }else{
+            btnMenu.classList.remove('menu-mobile-show')
+            btnMenu.classList.add('menu-mobile-hide')
+        }
+    }
+
+    function closeMenu(){
+        let btnMenu = document.querySelector("#menu")
+            btnMenu.classList.remove('menu-mobile-show')
+            btnMenu.classList.add('menu-mobile-hide')
+    }
+</script>
 </html>
