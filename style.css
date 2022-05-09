@@ -58,7 +58,12 @@ nav{
 
 nav svg{
    width:10rem;
+   
 }
+nav img{
+   width:16rem;
+}
+
 
 nav.scroll{
    background-color:var(--primary-color);
@@ -210,7 +215,7 @@ body section{
 .menu-desck ul{
    display: flex;
    align-items: center;
-   margin: 0 5rem 0 0;
+   margin: 0 10rem 0 0;
 
 
 }
@@ -233,10 +238,16 @@ body section{
    border:0.2rem solid var(--primary-color);
    padding:2rem;
    border-radius: 4rem;
-
-   
+   font-family: 'Nunito Sans';
+   color:var(--primary-color);
+   text-transform: uppercase;   
 }
-
+.menu-desck button:hover{
+   transition: 0.7s;
+   color: white;
+   cursor: pointer;
+   background-color:var(--primary-color);
+   }
 
 .menu ul:nth-child(2){
    display:flex;
@@ -381,11 +392,13 @@ footer{
  .container{
     display: flex;
     flex-direction: row;
+    margin:0 auto;
  }
 
  .infos-box{
     display: flex;
     flex-direction: row;
+
  }
 
  .Informacoes{
@@ -396,6 +409,46 @@ footer{
  .botaoMenu{
     display: none;
  }
- 
+.menu-show{
+   display: none;
 }
- 
+
+.scroll button{
+   background-color:transparent;
+   border:none;
+   border:0.2rem solid white;
+   padding:2rem;
+   border-radius: 4rem;
+   font-family: 'Nunito Sans';
+   font-weight: 700;
+   text-transform:uppercase;
+   color:white;
+
+}
+.scroll a{
+   text-decoration: none;
+   color:white;
+   font-family: 'Nunito Sans';
+   /* font-weight: 700; */
+   font-size:2rem;
+}
+.scroll a:hover{
+   border-bottom: 0.2rem solid white;
+   padding-bottom:1rem;
+}
+.scroll button:hover{
+   transition: 0.7s;
+   color: var(--primary-color);
+   cursor: pointer;
+   background-color:white;
+}
+.conteudo{
+   margin:0 25rem;
+   width:25%;
+    
+}
+.navigation{
+   display:flex;
+   justify-content:space-between;
+}
+} 
