@@ -253,12 +253,12 @@ body section{
    padding-bottom:5rem;
    padding-inline: 1rem;
    border-radius: 4rem;
-
-   
+   margin-bottom: 3rem;  
+   height: 70rem; 
 }
-.card+.card{
+/* .card+.card{
    margin-top:5rem;
-}
+} */
 .card img{
    border-radius: 3rem;
    box-shadow: 0 0.3rem 0.5rem 0 rgba(0,0,0,.6) ;
@@ -284,13 +284,60 @@ h4{
 }
 .card p{
    margin-top: 2rem;
-
 }
 /* -------Rodapé------- */
-section footer {
+footer {
    background-color:var(--primary-color);
    display:flex;
-   justify-content: center;
    align-items: center;
-
+   justify-content: space-between;
+   height:10rem;
+   width:100%;
+   margin-left: auto;
+   margin-right: auto;
 }
+footer p{
+   font-family: 'Nunito Sans';
+   text-transform: uppercase;
+   color:white;
+   font-size:1.5rem;
+   
+}
+footer.midiasSociais{
+   display:flex;
+   flex-direction: column;
+}
+/* ------ media query ----- */
+@media screen and (min-width:76.8rem){
+ section {
+    display:flex;
+    width: 100vw;
+
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+footer{
+    margin-top:5rem;
+ }
+ .cards{
+    display:flex;
+    width:100%;
+    flex-direction: column;
+ }
+ .cards-box{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .card{
+    width:55rem;
+    margin: 0 0.9rem;
+    height: 70rem;
+ }
+}
+ 
