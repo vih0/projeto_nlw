@@ -14,13 +14,15 @@
     --nav-height:11rem;
 }
 /* -----estilos gerais----- */
-html {
-   scroll-behavior: smooth;
- }
+/* html {
+   
+} */
 body{
    font-family: 'Nunito Sans', sans-serif;
    align-items: center;
-   text-align: center;   
+   text-align: center;
+   scroll-behavior: smooth;
+   transition: 2000ms;   
 }
 ul{
     list-style: none;
@@ -180,6 +182,7 @@ body section{
    background-color: transparent;
    border-style: none;
    cursor:pointer;
+   
   }
 
 .menu-show{
@@ -197,6 +200,41 @@ body section{
    width: 100vw; 
    flex-direction: column;
    align-items: center;
+   
+}
+
+.menu-desck{
+   display: none;
+}
+
+.menu-desck ul{
+   display: flex;
+   align-items: center;
+   margin: 0 5rem 0 0;
+
+
+}
+.menu-desck a {
+   text-decoration: none;
+   color: var(--primary-color);
+   font-family: 'Nunito Sans';
+   font-weight: 700;
+   font-size:2rem;
+
+}
+.menu-desck a:hover{
+   border-bottom: 0.2rem solid var(--primary-color);
+   padding-bottom:1rem;
+}
+
+.menu-desck button{
+   background-color:transparent ;
+   border:none;
+   border:0.2rem solid var(--primary-color);
+   padding:2rem;
+   border-radius: 4rem;
+
+   
 }
 
 
@@ -256,9 +294,7 @@ body section{
    margin-bottom: 3rem;  
    height: 70rem; 
 }
-/* .card+.card{
-   margin-top:5rem;
-} */
+
 .card img{
    border-radius: 3rem;
    box-shadow: 0 0.3rem 0.5rem 0 rgba(0,0,0,.6) ;
@@ -312,14 +348,16 @@ footer.midiasSociais{
  section {
     display:flex;
     width: 100vw;
-
  }
- 
- 
- 
- 
- 
- 
+
+ .menu-desck{
+    display: flex;
+   
+ }
+
+ section{
+    flex-direction: column;
+ }
  
 footer{
     margin-top:5rem;
@@ -339,5 +377,25 @@ footer{
     margin: 0 0.9rem;
     height: 70rem;
  }
+
+ .container{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .infos-box{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .Informacoes{
+    width: 80%;
+    height: 40rem;
+ }
+
+ .botaoMenu{
+    display: none;
+ }
+ 
 }
  
