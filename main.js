@@ -18,34 +18,13 @@ function showMenu(){
       
     }
 }
-const formulario = document.getElementById('formulario');
-const nome = document.getElementById('name');
-const email = document.getElementById('email');
-const botao = document.getElementById('botao');
-const mensagem = document.getElementById('mensagem');
-
-formulario.addEventListener('submit', () => {
-    e.preventDefault()
-    checkInput()
-})
-function checkInput() {
-    const nomeValue=nome.value.trim() 
-    const emailValue=email.value .trim()
-}
-if(nome === ''){
-
-    errorValidation(nome, 'Insira seu nome')
+function inscrito (){
+    let nome = document.getElementById('nome').value;
+    if(nome === 'vitoria'){
+        alert('nao entendi')
+    }else{
+        alert('Sua inscrição foi recebida, entraremos em contato')
+    }
 }
 
-function errorValidation(input, message){
-    const formControl = input.parentElement;
-    const small = formControl.querySelector('small')
-    small.innerText = message
-    
-    formControl.classname = 'form-control error'
-}
 
-    
-    botao.addEventListener('click', ()=>{
-        document.querySelector('.mensagem').style.display ="block";
-    })
