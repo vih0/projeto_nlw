@@ -62,8 +62,15 @@ h2{
     text-transform: uppercase;
     font-weight: 500;
 }
+.botao:hover{
+    background-color: black;
+    cursor: pointer;
+}
 .imagemPrincipal{
     width:70rem;
     height:60rem;
     margin: 6rem 0 0 30rem;
+}
+.mensagem{
+    display:none;
 }

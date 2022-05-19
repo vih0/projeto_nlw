@@ -18,9 +18,11 @@ function showMenu(){
       
     }
 }
-const formulario = document.getElementById('formulario')
-const nome = document.getElementById('name')
-const email = document.getElementById('email')
+const formulario = document.getElementById('formulario');
+const nome = document.getElementById('name');
+const email = document.getElementById('email');
+const botao = document.getElementById('botao');
+const mensagem = document.getElementById('mensagem');
 
 formulario.addEventListener('submit', () => {
     e.preventDefault()
@@ -42,3 +44,8 @@ function errorValidation(input, message){
     
     formControl.classname = 'form-control error'
 }
+
+    
+    botao.addEventListener('click', ()=>{
+        document.querySelector('.mensagem').style.display ="block";
+    })
