@@ -37,4 +37,8 @@ if(nome === ''){
 
 function errorValidation(input, message){
     const formControl = input.parentElement;
+    const small = formControl.querySelector('small')
+    small.innerText = message
+    
+    formControl.classname = 'form-control error'
 }
