@@ -20,8 +20,8 @@ function showMenu(){
 }
 function inscrito (){
     var nome = document.getElementById('nome').value;
- 
-    if(!(nome=="")){
+    var email = document.getElementById('email').value;
+    if(!(nome=="") && !(email=="")){
         alert('Sua inscrição foi recebida, entraremos em contato');
     }else{
         alert('nao entendi');
