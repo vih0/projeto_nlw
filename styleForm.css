@@ -30,19 +30,23 @@ header{
 }
 button{
     width: 30rem;
+    height: 5rem;
+    margin: 2rem 2rem;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 5rem;
+    color: white;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+button:hover{
+    border: 2px solid var(--paragraph);
 }
 a{
     text-decoration: none;
-    font-size: 3rem;
-    color: var(--primary-color);
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 3rem 3rem;
-    
 }
-a:hover{
-    border-bottom: 3px solid var(--primary-color);
-    padding-bottom:1rem;
-}
+
 .conteudo{
     display:flex;
     
@@ -62,6 +66,7 @@ a:hover{
  color:var(--paragraph);
  text-transform: uppercase;
  padding:1rem;
+
 }
 .formulario-info input {
     width: 38rem;
@@ -87,7 +92,7 @@ a:hover{
     cursor: pointer;
 }
 .imagemPrincipal{
-    width:70rem;
+    width:75rem;
     height:60rem;
     margin: 6rem 0 0 30rem;
 }
