@@ -19,11 +19,12 @@ function showMenu(){
     }
 }
 function inscrito (){
-    let nome = document.getElementById('nome').value;
-    if(nome === 'vitoria'){
-        alert('nao entendi')
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    if(!(nome=="") && !(email=="")){
+        alert('Sua inscrição foi recebida, entraremos em contato');
     }else{
-        alert('Sua inscrição foi recebida, entraremos em contato')
+        alert('nao entendi');
     }
 }
 
