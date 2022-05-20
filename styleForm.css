@@ -64,8 +64,8 @@ a{
 }
 .formulario-info{
  font-family: Arial, Helvetica, sans-serif;
- /* font-size: 2rem;
- font-weight: 600; */
+ font-size: 2rem;
+ font-weight: 600;
  color:var(--paragraph);
  text-transform: uppercase;
  padding:1rem;
@@ -74,21 +74,13 @@ a{
 .formulario-info input {
     border-radius:10px;
     padding: 1rem;
-    /* width: 38rem;
-    height: 3.3rem;
     border:none;
-    display: flex;
-    
-    justify-content: center;
-
-    border-radius:5rem; */
-    outline:  inset var(--paragraph);
+    outline: 0.5rem inset var(--paragraph);
 }
 .botao{
     padding:2rem;
     width:40rem;
     border:none;
-    /* margin-left: 7rem; */
     margin-inline:auto;
     border-radius: 5rem;
     background-color: var(--primary-color);
@@ -96,6 +88,11 @@ a{
     font-size: 2rem;
     text-transform: uppercase;
     font-weight: 500;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 .botao:hover{
     background-color: black;
@@ -106,6 +103,4 @@ a{
     height:60rem;
     margin: 6rem 0 0 30rem;
 }
-.mensagem{
-    display:none;
-}
+

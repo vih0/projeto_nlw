@@ -24,7 +24,7 @@ function inscrito (){
     if(!(nome=="") && !(email=="")){
         alert('Sua inscrição foi recebida, entraremos em contato');
     }else{
-        alert('nao entendi');
+        alert('Inscrição Invalida');
     }
 }
 
