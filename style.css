@@ -1,20 +1,22 @@
+/* -----estilos gerais----- */
 *{
-    margin: 0;
-    box-sizing: border-box;
-    width:100%;
-
+   margin: 0;
+   box-sizing: border-box;
+   width:100%;
+   
+}
+html{
+   scroll-behavior: smooth;
 }
 :root{
-    font-size: 62.5%; /* 1rem = 10px */
-    --primary-color:hsl(209, 77%, 43%);
-    --headline: hsla(205, 100%, 5% );
-    --paragraph: hsla(204, 16%, 24% );
-    --brand-beige:hsla(204, 100%, 97%);
-    --brand-light: hsla(206, 100%, 91%);
-    --nav-height:11rem;
+   font-size: 62.5%; /* 1rem = 10px */
+   --primary-color:hsl(209, 77%, 43%);
+   --headline: hsla(205, 100%, 5% );
+   --paragraph: hsla(204, 16%, 24% );
+   --brand-beige:hsla(204, 100%, 97%);
+   --brand-light: hsla(206, 100%, 91%);
+   --nav-height:11rem;
 }
-/* -----estilos gerais----- */
-
 body{
    font-family: 'Nunito Sans', sans-serif;
    align-items: center;
@@ -26,8 +28,8 @@ a{
    text-decoration: none;
 }
 ul{
-    list-style: none;
-    padding:0;
+   list-style: none;
+   padding:0;
 }
 /* -----estilo do background inicial----- */
 section::before{
@@ -53,8 +55,6 @@ nav{
    left:50%;
    transform:translateX(-50%);
    height: var(--nav-height);
-  
- 
 }
 
 nav svg{
@@ -69,8 +69,6 @@ nav img{
 nav.scroll{
    background-color:var(--primary-color);
    width:100vw;
-  
-  
 }
 /* ----titulo, subtitulo e textos---- */
 section{
@@ -119,8 +117,6 @@ section button{
    gap: 1.6rem;
    margin-left: auto;
    margin-right: auto;
-  
- 
 
 
 }
@@ -149,25 +145,21 @@ button.botaoMatricula:hover{
    flex-direction: column;
    justify-content: center;
    border-radius: 2rem;
-  
 }
 .dados img {
-  width:10rem;
-  margin-left:auto;
-  margin-right: auto;
-  
-  padding-top:1rem;
-  
-
-  
+   width:10rem;
+   margin-left:auto;
+   margin-right: auto;
+   
+   padding-top:1rem;
 }
 .dados p{
    margin-bottom:2rem;
    padding-top:1rem;
 }
 .dados .titulo  {
-    margin-top:1rem;
-    font-size:3rem;
+      margin-top:1rem;
+      font-size:3rem;
 }
 /* --------icones mudam de cor quando desce a pagina ---- */
 .scroll svg :nth-child(1){
@@ -180,21 +172,21 @@ stroke: #fff;
 }
    
  /* --------menu------- */
- 
+
 
 body section{
    overflow:hidden;
- }
+}
 
 .botaoMenu{
    background-color: transparent;
    border-style: none;
    cursor:pointer;
    
-  }
+}
 
 .menu-show{
- display: flex; 
+   display: flex; 
 }
 .menu-hide{
    display:none;
@@ -275,19 +267,19 @@ body section{
 }
 
 .menu .botaoInsideMenu{ 
-  background-color:white;
-  border:none;
-  height:6.2rem;
-  width:26.3rem; 
-  margin: 0 5.1rem 0 5rem;
-  border-radius:4rem;
-  font-family: 'Nunito Sans';
-  font-weight: 700;
-  text-transform: uppercase;
-  color:var(--primary-color);
-  box-shadow: 0.2rem 0.4rem  0 var(--paragraph);
-  margin-left:auto;
-  margin-right:auto;  
+   background-color:white;
+   border:none;
+   height:6.2rem;
+   width:26.3rem; 
+   margin: 0 5.1rem 0 5rem;
+   border-radius:4rem;
+   font-family: 'Nunito Sans';
+   font-weight: 700;
+   text-transform: uppercase;
+   color:var(--primary-color);
+   box-shadow: 0.2rem 0.4rem  0 var(--paragraph);
+   margin-left:auto;
+   margin-right:auto;  
 }
 .closeMenu{
    border: none;

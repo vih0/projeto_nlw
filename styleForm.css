@@ -63,12 +63,12 @@ a{
    
 }
 .formulario-info{
- font-family: Arial, Helvetica, sans-serif;
- font-size: 2rem;
- font-weight: 600;
- color:var(--paragraph);
- text-transform: uppercase;
- padding:1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color:var(--paragraph);
+    text-transform: uppercase;
+    padding:1rem;
 
 }
 .formulario-info input {
@@ -103,4 +103,27 @@ a{
     height:60rem;
     margin: 6rem 0 0 30rem;
 }
-
+@media screen and (max-width:780px){
+    .conteudo{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .formulario{
+        height: 40rem;
+        width: 40rem;
+        margin: 5rem 0 0 0;
+        padding: 5rem;
+    }
+    .botao{
+        width:20rem ;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .imagemPrincipal{
+        width: 50rem;
+        height: 30rem;
+        margin: 3rem 0 0 0;
+    }
+}
