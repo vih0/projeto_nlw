@@ -13,7 +13,7 @@
     --nav-height:11rem;
 }
 body{
-    background-color: var(--primary-color);
+    background-color: var(--brand-light);
 }
 h2{
     text-align: center;
@@ -55,7 +55,7 @@ a{
     width: 70rem;
     padding:10rem;
     margin: 10rem 0 0 10rem;
-    background-color: var(--brand-light);
+    background-color: var(--brand-beige);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +75,7 @@ a{
     border-radius:10px;
     padding: 1rem;
     border:none;
-    outline: 0.5rem inset var(--paragraph);
+    outline: 0.5rem inset var(--primary-color);
 }
 .botao{
     padding:2rem;
@@ -95,7 +95,7 @@ a{
     
 }
 .botao:hover{
-    background-color: black;
+    background-color: var(--paragraph);
     cursor: pointer;
 }
 .imagemPrincipal{
@@ -103,4 +103,9 @@ a{
     height:60rem;
     margin: 6rem 0 0 30rem;
 }
-
+footer{
+    width:100vw;
+    height: 11rem;
+    background-color: var(--brand-beige);
+    margin-top: 7.6rem;
+}

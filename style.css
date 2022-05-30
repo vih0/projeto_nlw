@@ -19,6 +19,7 @@ body{
    font-family: 'Nunito Sans', sans-serif;
    align-items: center;
    text-align: center;
+   
 
    
 }
@@ -53,6 +54,7 @@ nav{
    left:50%;
    transform:translateX(-50%);
    height: var(--nav-height);
+
   
  
 }
@@ -63,6 +65,7 @@ nav svg{
 }
 nav img{
    width:16rem;
+
 }
 
 
@@ -432,7 +435,7 @@ footer{
    text-decoration: none;
    color:white;
    font-family: 'Nunito Sans';
-   /* font-weight: 700; */
+   font-weight: 700;
    font-size:2rem;
 }
 .scroll a:hover{
